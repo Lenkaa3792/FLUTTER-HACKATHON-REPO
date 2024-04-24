@@ -6,21 +6,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromARGB(255, 136, 48, 7),
-        ),
-        useMaterial3: true,
+      debugShowCheckedModeBanner: false,  // Hide debug banner
+      title: 'Flutter Demo',  // Set app title
+      theme: ThemeData(  // Configure app theme
+        colorScheme: ColorScheme.fromSwatch().copyWith(primary: const Color(0xFF883007)),  // Set primary color
+        useMaterial3: true,  // Enable Material 3 design elements
       ),
-      home: TasksScreen(),
+      home: TasksScreen(),  // Set home screen to TasksScreen
     );
   }
 }
