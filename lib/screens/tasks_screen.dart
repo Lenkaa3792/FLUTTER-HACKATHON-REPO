@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todolist/model/todo.dart';
-import 'package:todolist/widgets/todo_items.dart';
+import 'package:todolist/model/todo.dart'; // Import ToDo model class
+import 'package:todolist/widgets/todo_items.dart'; // Import ToDoItem widget
 
 // Enumeration to represent different task categories
 enum TaskCategory {
@@ -35,12 +35,10 @@ class _TasksScreenState extends State<TasksScreen> {
           _foundToDo = todosList; // Display all tasks
           break;
         case TaskCategory.completed:
-          _foundToDo =
-              todosList.where((todo) => todo.isDone).toList(); // Display completed tasks
+          _foundToDo = todosList.where((todo) => todo.isDone).toList(); // Display completed tasks
           break;
         case TaskCategory.pending:
-          _foundToDo =
-              todosList.where((todo) => !todo.isDone).toList(); // Display pending tasks
+          _foundToDo = todosList.where((todo) => !todo.isDone).toList(); // Display pending tasks
           break;
       }
     });
@@ -171,8 +169,7 @@ class _TasksScreenState extends State<TasksScreen> {
             ListTile(
               title: Text("Completed Tasks"),
               leading: Icon(Icons.check_box),
-              onTap: () =>
-                  _setSelectedCategory(TaskCategory.completed, context),
+              onTap: () => _setSelectedCategory(TaskCategory.completed, context),
             ),
             ListTile(
               title: Text("Pending Tasks"),
