@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:todolist/model/todo.dart';
-
 // Widget representing a single ToDo item in the list
 class ToDoItem extends StatelessWidget {
   final ToDo todo; // The ToDo object associated with this item
@@ -38,7 +37,7 @@ class ToDoItem extends StatelessWidget {
           todo.todoText,  // Display the task text
           style: TextStyle(
             fontSize: 16,
-            color: Colors.black,
+            color: Colors.brown,
             decoration: todo.isDone ? TextDecoration.lineThrough : null,  // Apply strikethrough decoration if task is completed
           ),
         ),
@@ -58,7 +57,7 @@ class ToDoItem extends StatelessWidget {
             icon: Icon(
               Icons.delete,
               size: 18,
-              color: Colors.white,  // Set icon color to white
+              color: Colors.green,  // Set icon color to white
             ),
           ),
         ),

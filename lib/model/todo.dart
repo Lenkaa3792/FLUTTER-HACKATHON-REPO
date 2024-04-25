@@ -19,8 +19,8 @@ class ToDo {
     return [
       ToDo(id: '1', todoText: 'Buy groceries', isDone: true), // A completed task
       ToDo(id: '2', todoText: 'Go shopping', isDone: true), // A completed task
-      ToDo(id: '3', todoText: 'Call mom', isDone: true), // A completed task
-      ToDo(id: '4', todoText: 'Call dad'), // An incomplete task
+      ToDo(id: '3', todoText: 'Call lecturer', isDone: true), // A completed task
+      ToDo(id: '4', todoText: 'Call classmate'), // An incomplete task
       ToDo(id: '5', todoText: 'Call brother'), // An incomplete task
       ToDo(id: '6', todoText: 'Call sister'), // An incomplete task
     ];
