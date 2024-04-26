@@ -36,3 +36,10 @@ Screens are responsible for rendering the user interface of different parts of t
 widgets
 Widgets are reusable components that encapsulate UI elements and behavior, making it easier to build and maintain the app's interface.
 
+#here are sample screenshots of the app
+
+
+
+
+![localhost_56673_(iPhone 14 Pro Max) (1)](https://github.com/muiam/FLUTTER-HACKATHON-REPO/assets/74063153/a185e394-96b1-483b-aa6f-c5bb2c9f7562)
+
